@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing:border-box;
+                font-family: 'Roboto',sans-serif;
+            }
+            body{
+                margin:0;
+            }
+            a{
+                text-decoration: none;
+                color: black;
+            }
+            sup{
+                font-size: 9px;
+                color: black;
+            }
+            ul li{
+                list-style-type: none;
+                margin:0px;
+                padding: 0;
+                align-items: left;
+                margin-left: 0;
+            }
+            .searchbar{
+                display: flex;
+                width:70%;
+                border-radius:2px;
+                justify-content: center;
+            }
+            .searchform{
+                display: flex;
+                width: 600px;
+                max-width: 100%;
+            }
+            .searchform input {
+                flex:1;
+                padding: 10px 14px;
+                font-size: 14px;
+                border: 1px solid #ccc;
+                border-right: none;
+                border-radius: 20px 0 0 20px;
+                outline: none;
+            }
+            
+            i{
+                color:black;
+                font-size: 30px;
+                margin-right: 20px !important;
+            }
+            
+            .menu {
+                list-style: none;
+                margin-top: 10px;
+                color:black;
+            }
+            aside.container{
+                position:fixed;
+                top: 64px;
+                left: 0;
+                width: 240px;
+                height: calc(100vh - 64px);
+                overflow-y: auto;
+                border-right: 1px solid white;
+                background: white;
+            }
+            .menu li {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                padding: 10px;
+                border-radius: 10px;
+            }
+            .signbutton{
+                margin: 15px 0;
+                padding: 10px;
+                font-size: 12px;
+                border-bottom: 1px solid grey;
+                border-top: 1px solid grey;
+            }
+            button{
+                background: #065fd4;
+                color: white;
+                padding: 8px 14px;
+                border-radius: 20px;
+            }
+            .imgarea{
+                display: grid;
+                grid-template-columns: auto;
+                gap:50px;
+                padding: 20px;
+                margin-left: 240px;
+                margin-top:64px;
+            }
+            .imgarea img {
+                width: 100%;
+                height: 300px;
+                object-fit: cover;
+                border-radius: 12px;
+            }
+            .new{
+                border-top: 1px solid grey;
+                border-bottom: 1px solid grey;
+                margin: 15px 0;
+                padding: 10px;
+            }
+            .mic{
+                display: flex;
+                justify-content: center;
+                margin-top:0px;
+                font-size:20px;
+                margin-left:0px;
+            }
+            .top{
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 64px;
+                display:flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0 16px;
+                background: white;
+                border-bottom: 1px solid white;
+                gap:20px;
+            }
+            .topleft{
+                display: flex;
+                align-items: center;
+                gap: 16px;
+                min-width: 240px;
+            }
+            span{
+                color:black;
+            }
+        </style>
+    </head>
+    <body>
+        <aside class="container">
+        
+            <ul class="menu">
+                <li>
+                    <a href="#">
+                        <i class="fa fa-home"></i>
+                          Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-bolt"></i>
+                        Shorts
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-play-circle-o"></i>
+                        Subscriptions
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-user-o"></i>
+                        You
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-history"></i>
+                        History
+                    </a>
+                </li>
+            </ul>
+            <div class="signbutton" style="text-align: center;">
+                <p>Sign-in to like video,<br>comment, and subscribe.</p>
+                <button style="background-color: white;">
+                    <i class="fa fa-user-circle-o"></i>
+                    <span style="color:blue;">Sign-in</span>
+                </button>
+            </div>
+            <p style="margin-left: 15px;"><b>Explore</b></p>
+            <ul class="menu">
+                <li>
+                    <a href="#">
+                        <i class="fa fa-shopping-bag"></i>
+                        Shopping
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-music"></i>
+                        Music
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-film"></i>
+                        Movies
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-rss"></i>
+                        Live
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class="fa fa-gamepad"></i>
+                        Gaming
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-newspaper-o"></i>
+                        News
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-trophy"></i>
+                        Sports
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-graduation-cap"></i>
+                        Courses
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-shopping-bag"></i>
+                        Fashion &amp; Beauty
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-podcast"></i>
+                        Podcasts
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-chevron-up"></i>
+                        Show less
+                    </a>
+                </li>
+            </ul>
+            <p style="margin-left:2px;border-top: 1px solid grey;padding: 8px 16px 6px;"><b>More from YouTube</b></p>
+            <ul class="menu" style="border-bottom: 1px solid grey;">
+                <li>
+                    <a href="#">
+                        <i class="fa fa-youtube-play" style="color:red;margin-right:10px;">
+                            <span>YouTube Premium</span>
+                        </i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-play-circle yt-icon" style="margin-right: 20px;color: red;">
+                            <span> YouTube Music</span>
+                        </i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-youtube yt-icon" style="margin-right: 20px;color:red;">
+                            <span>YouTube Kids</span>
+                        </i>
+                    </a>
+                </li>
+            </ul>
+            <ul class="menu" style="border-bottom: 1px solid grey;">
+                <li>
+                    <a href="#">
+                        <i class="fa fa-cog"></i>
+                        Settings
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-flag-o"></i>
+                        Report History
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-question-circle-o"></i>
+                        Help
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-comment-o"></i>
+                        Send Feedback
+                    </a>
+                </li>
+            </ul>
+            <p> About  Press  Copyrights<br>Contact us  Creators  Advertise<br>Developers<br><br>
+            How YouTube works<br>Test new features</p>
+        </aside>
+        <header class="top">
+            <div class="topleft">
+                <i class="fa fa-bars menu-btn" style="margin-right: 20px;color:black;"></i>
+                <i class="fa fa-youtube-play" style="color:red;font-size: 24px;">
+                    <b style="color:black;">
+                        YouTube
+                    </b>
+                    <sup>IN</sup>
+                </i>
+            </div>
+            <div class="searchbar">
+                <form class="searchform">
+                    <input type="search" placeholder="Search">
+                    <button type="submit">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </form>
+            </div>
+            <div class="mic">
+                <i class="fa fa-microphone"></i>
+            </div>
+            <button style="background-color: white;">
+                <i class="fa fa-user-circle-o"></i>
+                <span style="color:blue;">Sign-in</span>
+            </button>
+        </header>
+            <div class="imgarea">
+                <div>
+                    <img src="Pic1.jpg" alt="picture1" style="width:300px;height:300px;">
+                    <img src="pic2.jpg" alt="picture1" style="width:300px;height:300px;">
+                    <img src="pic3.jpg" alt="picture1" style="width:300px;height:300px;">
+                    <img src="pic4.jpg" alt="picture1" style="width:300px;height:300px;">
+                    <img src="pic5.jpg" alt="picture1" style="width:300px;height:300px;">
+                    <img src="pic6.jpg" alt="picture1" style="width:300px;height:300px;">
+                    <img src="pic4.jpg" alt="picture1" style="width:300px;height:300px;">
+                    <img src="pic5.jpg" alt="picture1" style="width:300px;height:300px;">
+                    <img src="pic6.jpg" alt="picture1" style="width:300px;height:300px;">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
